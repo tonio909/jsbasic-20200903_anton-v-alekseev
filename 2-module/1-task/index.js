@@ -4,5 +4,11 @@
  * @returns {Number}
  */
 function sumSalary(salaries) {
-  // ваш код...
+  let salaryValues = [0];
+  for (let salariesKey in salaries) {
+    if (typeof salaries[salariesKey] === "number") {
+      salaryValues.push(salaries[salariesKey]);
+    }
+  }
+  return salaryValues.reduce((a, b) => a + b);
 }
