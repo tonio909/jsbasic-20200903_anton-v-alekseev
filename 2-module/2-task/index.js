@@ -4,5 +4,8 @@
  * @returns {Boolean}
  */
 function isEmpty(obj) {
-  // ваш код...
+  for (let existingKey in obj) {
+    return false;
+  }
+  return true;
 }
