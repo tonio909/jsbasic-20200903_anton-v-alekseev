@@ -5,5 +5,5 @@
  * @returns {string}
  */
 function showSalary(users, age) {
-  // ваш код...
+  return users.filter(a => a.age <= age).map(b => `${b.name}, ${b.balance}`).join("\n");
 }
